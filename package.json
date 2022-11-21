@@ -38,6 +38,8 @@
     "callsite": "^1.0.0",
     "clsx": "^1.2.1",
     "docusaurus-plugin-matomo": "^0.0.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
     "file-loader": "^6.2.0",
     "hast-util-is-element": "1.1.0",
     "plugin-image-zoom": "flexanalytics/plugin-image-zoom",
@@ -73,6 +75,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.1.0",
     "@tsconfig/docusaurus": "^1.0.6",
+    "@types/express": "^4.17.14",
     "@types/react": "^17.0.0",
     "@types/webpack-env": "^1.16.3",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
