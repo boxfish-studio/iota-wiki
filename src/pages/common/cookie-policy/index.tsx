@@ -8,7 +8,7 @@ export default function CookiePolicy() {
       <Head>
         <script
           id='CookieDeclaration'
-          src='https://consent.cookiebot.com/8f051d60-4ecb-41a0-abb9-4874fd999e4f/cd.js'
+          src='https://consent.cookiebot.com/839d3592-4fa7-48a6-8e68-b305081cd336/cd.js'
           type='text/javascript'
           async
         ></script>
