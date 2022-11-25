@@ -266,7 +266,7 @@ module.exports = {
         pages: {
           path: 'src/pages/iota',
         },
-        ...googleAnalytics,
+        ...googleAnalytics.analytics,
       },
     ],
   ],
@@ -358,4 +358,5 @@ module.exports = {
     ...content.staticDirectories,
     ...tutorials.staticDirectories,
   ],
+  ...googleAnalytics.cookies,
 };

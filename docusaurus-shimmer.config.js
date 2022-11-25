@@ -242,7 +242,7 @@ module.exports = {
         pages: {
           path: 'src/pages/shimmer',
         },
-        ...googleAnalytics,
+        ...googleAnalytics.analytics,
       },
     ],
   ],
@@ -334,4 +334,5 @@ module.exports = {
     ...content.staticDirectories,
     ...tutorials.staticDirectories,
   ],
+  ...googleAnalytics.cookies,
 };

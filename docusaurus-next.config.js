@@ -249,7 +249,7 @@ module.exports = {
         pages: {
           path: 'src/pages/next',
         },
-        ...googleAnalytics,
+        ...googleAnalytics.analytics,
       },
     ],
   ],
@@ -341,4 +341,5 @@ module.exports = {
     ...content.staticDirectories,
     ...tutorials.staticDirectories,
   ],
+  ...googleAnalytics.cookies,
 };
