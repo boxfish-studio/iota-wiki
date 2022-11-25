@@ -5,14 +5,6 @@ import Head from '@docusaurus/Head';
 export default function CookiePolicy() {
   return (
     <>
-      <Head>
-        <script
-          id='CookieDeclaration'
-          src='https://consent.cookiebot.com/839d3592-4fa7-48a6-8e68-b305081cd336/cd.js'
-          type='text/javascript'
-          async
-        ></script>
-      </Head>
       <Layout>
         <div className='hero'>
           <div className='container'>
@@ -21,6 +13,12 @@ export default function CookiePolicy() {
             </div>
           </div>
         </div>
+        <script
+          id='CookieDeclaration'
+          src='https://consent.cookiebot.com/839d3592-4fa7-48a6-8e68-b305081cd336/cd.js'
+          type='text/javascript'
+          async
+        ></script>
       </Layout>
     </>
   );
