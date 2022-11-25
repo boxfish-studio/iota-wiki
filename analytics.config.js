@@ -1,10 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv').config();
-
 module.exports = {
   analytics: {
     gtag: {
-      trackingID: process.env['GOOGLE_ANALYTICS_TRACKING_ID'],
+      trackingID: 'G-KVB88SVNF8',
       anonymizeIP: true,
     },
   },
