@@ -10,7 +10,7 @@ module.exports = {
       {
         id: 'Cookiebot',
         src: 'https://consent.cookiebot.com/uc.js',
-        'data-cbid': '8f051d60-4ecb-41a0-abb9-4874fd999e4f',
+        'data-cbid': '39d3592-4fa7-48a6-8e68-b305081cd336',
         'data-blockingmode': 'auto',
       },
     ],
