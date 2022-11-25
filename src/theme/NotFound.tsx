@@ -6,20 +6,24 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
 
 interface DocEntry {
+  id: string;
+  path: string;
+  sidebar: string;
+}
+
+interface DocSection {
   versions: Array<{
-    docs: Array<{ id: string; path: string; sidebar: string }>;
+    docs: Array<DocEntry>;
   }>;
 }
 
-export default function NotFound() {
-  const { pathname } = useLocation();
-  const pathParts = pathname.split('/').filter(Boolean);
-
+function useFindMatchingEntries(searchingLocation: string): DocEntry[] {
+  const locationPaths = searchingLocation.split('/').filter(Boolean);
   const context = useDocusaurusContext();
 
   const sections = context.globalData[
     'docusaurus-plugin-content-docs'
-  ] as Record<string, DocEntry>;
+  ] as Record<string, DocSection>;
 
   const entries = Object.values(sections)
     .map((section) => {
@@ -28,9 +32,14 @@ export default function NotFound() {
     })
     .flat();
 
-  const possibleMatchingEntries = entries.filter((entry) =>
-    pathParts.some((part) => entry.id.includes(part)),
+  return entries.filter((entry) =>
+    locationPaths.some((part) => entry.id.includes(part)),
   );
+}
+
+export default function NotFound() {
+  const { pathname } = useLocation();
+  const possibleMatchingEntries = useFindMatchingEntries(pathname);
 
   return (
     <>
