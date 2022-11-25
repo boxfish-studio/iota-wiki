@@ -30,7 +30,6 @@
     "@algolia/client-search": "^4.14.1",
     "@docusaurus/core": "^2.1.0",
     "@docusaurus/plugin-client-redirects": "^2.1.0",
-    "@docusaurus/plugin-google-analytics": "^2.2.0",
     "@docusaurus/plugin-ideal-image": "^2.1.0",
     "@docusaurus/preset-classic": "^2.1.0",
     "@iota-wiki/plugin-tutorial": "^1.0.6",
@@ -74,6 +73,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.1.0",
+    "@docusaurus/plugin-google-gtag": "^2.2.0",
     "@tsconfig/docusaurus": "^1.0.6",
     "@types/react": "^17.0.0",
     "@types/webpack-env": "^1.16.3",
