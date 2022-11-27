@@ -247,5 +247,4 @@ module.exports = {
       },
     ],
   ],
-  ...googleAnalytics.cookies,
 };

@@ -1,0 +1,7 @@
+next/
+shimmer/
+build/
+node_modules/
+.docusaurus/
+.eslintcache
+.github/
