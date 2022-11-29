@@ -33,7 +33,17 @@ const production = {
       siteId: '13',
     },
   },
-  plugins: ['docusaurus-plugin-matomo'],
+  plugins: [
+    path.resolve(__dirname, 'plugins', 'cookiebot'),
+    'docusaurus-plugin-matomo',
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-KVB88SVNF8',
+        anonymizeIP: true,
+      },
+    ],
+  ],
 };
 
 module.exports = merge(
@@ -42,5 +52,5 @@ module.exports = merge(
   common,
   environment,
   search,
-  isProduction ? production : {},
+  production,
 );
