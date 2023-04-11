@@ -55,10 +55,8 @@ const production = {
 };
 
 const scripts = {
-  scripts: [
-    '/js/search-environment-observer.js'
-  ],
-}
+  scripts: ['/js/search-environment-observer.js'],
+};
 
 module.exports = merge(
   ...external,
